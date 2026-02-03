@@ -31,40 +31,76 @@
         <div class="pipeline-container">
             <!-- Ideas Input Side (Left) -->
             <div class="ideas-input">
-                <!-- Floating idea bubbles that animate in -->
+                <!-- Floating idea bubbles with detailed avatars -->
                 <div class="idea-bubble idea-1">
-                    <div class="user-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <circle cx="12" cy="8" r="4"/>
-                            <path d="M12 14c-6 0-8 3-8 6v2h16v-2c0-3-2-6-8-6z"/>
-                        </svg>
+                    <div class="user-avatar">
+                        <div class="avatar-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <svg viewBox="0 0 36 36" fill="none">
+                                <circle cx="18" cy="12" r="7" fill="white" opacity="0.9"/>
+                                <path d="M18 22c-8 0-12 4-12 8v2h24v-2c0-4-4-8-12-8z" fill="white" opacity="0.9"/>
+                            </svg>
+                        </div>
+                        <div class="avatar-status online"></div>
                     </div>
                     <div class="thought-cloud">
+                        <div class="cloud-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
                         <span>AI App</span>
+                    </div>
+                    <div class="connector-dots">
+                        <span></span><span></span><span></span>
                     </div>
                 </div>
 
                 <div class="idea-bubble idea-2">
-                    <div class="user-icon small">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <circle cx="12" cy="8" r="4"/>
-                            <path d="M12 14c-6 0-8 3-8 6v2h16v-2c0-3-2-6-8-6z"/>
-                        </svg>
+                    <div class="user-avatar small">
+                        <div class="avatar-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                            <svg viewBox="0 0 36 36" fill="none">
+                                <circle cx="18" cy="12" r="7" fill="white" opacity="0.9"/>
+                                <path d="M18 22c-8 0-12 4-12 8v2h24v-2c0-4-4-8-12-8z" fill="white" opacity="0.9"/>
+                            </svg>
+                        </div>
+                        <div class="avatar-status away"></div>
                     </div>
                     <div class="thought-cloud small">
+                        <div class="cloud-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M9 9h6v6H9z"/>
+                            </svg>
+                        </div>
                         <span>SaaS</span>
+                    </div>
+                    <div class="connector-dots">
+                        <span></span><span></span><span></span>
                     </div>
                 </div>
 
                 <div class="idea-bubble idea-3">
-                    <div class="user-icon tiny">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <circle cx="12" cy="8" r="4"/>
-                            <path d="M12 14c-6 0-8 3-8 6v2h16v-2c0-3-2-6-8-6z"/>
-                        </svg>
+                    <div class="user-avatar tiny">
+                        <div class="avatar-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <svg viewBox="0 0 36 36" fill="none">
+                                <circle cx="18" cy="12" r="7" fill="white" opacity="0.9"/>
+                                <path d="M18 22c-8 0-12 4-12 8v2h24v-2c0-4-4-8-12-8z" fill="white" opacity="0.9"/>
+                            </svg>
+                        </div>
+                        <div class="avatar-status online"></div>
                     </div>
                     <div class="thought-cloud tiny">
+                        <div class="cloud-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
                         <span>MVP</span>
+                    </div>
+                    <div class="connector-dots">
+                        <span></span><span></span><span></span>
                     </div>
                 </div>
             </div>
@@ -72,107 +108,352 @@
             <!-- Conveyor Belt with Tech Icons -->
             <div class="conveyor-belt">
                 <svg class="conveyor-path" viewBox="0 0 600 200" preserveAspectRatio="none">
-                    <path class="belt-line" d="M0,150 Q150,150 200,100 T400,100 T600,50" fill="none" stroke="#c5d0e6" stroke-width="2" stroke-dasharray="8,8"/>
+                    <defs>
+                        <linearGradient id="beltGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#c5d0e6;stop-opacity:0.3" />
+                            <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color:#c5d0e6;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                    <path class="belt-line" d="M0,150 Q150,150 200,100 T400,100 T600,50" fill="none" stroke="url(#beltGradient)" stroke-width="3" stroke-dasharray="12,8"/>
+                    <path class="belt-line-glow" d="M0,150 Q150,150 200,100 T400,100 T600,50" fill="none" stroke="#6366f1" stroke-width="1" stroke-dasharray="12,8" opacity="0.3"/>
                 </svg>
 
                 <!-- Animated tech icons on the belt -->
                 <div class="tech-icons">
-                    <div class="tech-icon icon-1" style="--delay: 0s">
+                    <div class="tech-icon icon-1">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
+                        <div class="icon-glow"></div>
                     </div>
-                    <div class="tech-icon icon-2" style="--delay: 0.5s">
+                    <div class="tech-icon icon-2">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                        <div class="icon-glow"></div>
                     </div>
-                    <div class="tech-icon icon-3" style="--delay: 1s">
+                    <div class="tech-icon icon-3">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                        <div class="icon-glow"></div>
                     </div>
-                    <div class="tech-icon icon-4" style="--delay: 1.5s">
+                    <div class="tech-icon icon-4">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <div class="icon-glow"></div>
                     </div>
-                    <div class="tech-icon icon-5" style="--delay: 2s">
+                    <div class="tech-icon icon-5">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="tech-icon icon-6">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <div class="icon-glow"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- Central Processing Box -->
+            <!-- Central Processing Box - Enhanced -->
             <div class="processing-box">
                 <div class="box-3d">
-                    <div class="box-face box-front"></div>
-                    <div class="box-face box-top"></div>
+                    <div class="box-face box-front">
+                        <div class="box-logo">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <rect x="8" y="8" width="24" height="24" rx="4" stroke="white" stroke-width="2" opacity="0.5"/>
+                                <rect x="14" y="14" width="12" height="12" rx="2" fill="white" opacity="0.8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="box-face box-top">
+                        <div class="box-pattern">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
                     <div class="box-face box-right"></div>
                 </div>
                 <div class="mascot">
-                    <svg viewBox="0 0 100 100" class="bird-mascot">
-                        <ellipse cx="50" cy="55" rx="30" ry="25" fill="#4ECDC4"/>
-                        <ellipse cx="50" cy="50" rx="25" ry="22" fill="#45B7AA"/>
-                        <circle cx="40" cy="45" r="5" fill="#333"/>
-                        <circle cx="60" cy="45" r="5" fill="#333"/>
-                        <circle cx="41" cy="44" r="2" fill="#fff"/>
-                        <circle cx="61" cy="44" r="2" fill="#fff"/>
-                        <path d="M45,55 Q50,62 55,55" fill="none" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/>
-                        <ellipse cx="30" cy="60" rx="8" ry="5" fill="#4ECDC4"/>
-                        <ellipse cx="70" cy="60" rx="8" ry="5" fill="#4ECDC4"/>
+                    <svg viewBox="0 0 120 120" class="bird-mascot">
+                        <!-- Body -->
+                        <ellipse cx="60" cy="70" rx="35" ry="30" fill="#4ECDC4"/>
+                        <ellipse cx="60" cy="65" rx="30" ry="27" fill="#45B7AA"/>
+                        <!-- Belly highlight -->
+                        <ellipse cx="60" cy="72" rx="20" ry="18" fill="#5FE3D9" opacity="0.5"/>
+                        <!-- Eyes -->
+                        <ellipse cx="47" cy="55" rx="8" ry="9" fill="white"/>
+                        <ellipse cx="73" cy="55" rx="8" ry="9" fill="white"/>
+                        <circle cx="49" cy="56" r="5" fill="#2D3748"/>
+                        <circle cx="75" cy="56" r="5" fill="#2D3748"/>
+                        <circle cx="50" cy="54" r="2" fill="white"/>
+                        <circle cx="76" cy="54" r="2" fill="white"/>
+                        <!-- Beak -->
+                        <path d="M55,65 Q60,72 65,65 Q60,68 55,65" fill="#FF8C42"/>
+                        <!-- Blush -->
+                        <ellipse cx="38" cy="65" rx="6" ry="4" fill="#FFB6C1" opacity="0.6"/>
+                        <ellipse cx="82" cy="65" rx="6" ry="4" fill="#FFB6C1" opacity="0.6"/>
+                        <!-- Wings -->
+                        <ellipse cx="28" cy="75" rx="12" ry="8" fill="#4ECDC4"/>
+                        <ellipse cx="92" cy="75" rx="12" ry="8" fill="#4ECDC4"/>
+                        <!-- Feet -->
+                        <path d="M50,95 L45,105 M50,95 L50,105 M50,95 L55,105" stroke="#FF8C42" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M70,95 L65,105 M70,95 L70,105 M70,95 L75,105" stroke="#FF8C42" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Hair/Tuft -->
+                        <path d="M55,35 Q60,25 65,35" stroke="#45B7AA" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <path d="M50,38 Q55,30 60,38" stroke="#4ECDC4" stroke-width="3" fill="none" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <div class="processing-glow"></div>
+                <div class="processing-rings">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                </div>
             </div>
 
-            <!-- Apps Output Side (Right) -->
+            <!-- Apps Output Side (Right) - Detailed Phone Screens -->
             <div class="apps-output">
                 <div class="phone-stack">
+                    <!-- Phone 1: Finance/Banking App -->
                     <div class="phone phone-1">
+                        <div class="phone-notch"></div>
                         <div class="phone-screen">
-                            <div class="app-header"></div>
-                            <div class="app-content">
-                                <div class="app-card green"></div>
-                                <div class="app-stats">
-                                    <span class="stat-value">TLT 10,234</span>
+                            <div class="screen-status-bar">
+                                <span class="time">9:41</span>
+                                <div class="status-icons">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" opacity="0.3"/><path d="M12 3c-4.97 0-9 4.03-9 9h2c0-3.87 3.13-7 7-7V3z"/></svg>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                                    <svg viewBox="0 0 24 24" width="18" height="14" fill="currentColor"><rect x="2" y="7" width="18" height="10" rx="2" opacity="0.3"/><rect x="20" y="10" width="2" height="4" rx="1"/></svg>
+                                </div>
+                            </div>
+                            <div class="app-finance">
+                                <div class="finance-header">
+                                    <div class="finance-greeting">
+                                        <span class="greeting-text">Good morning</span>
+                                        <span class="user-name">Sarah</span>
+                                    </div>
+                                    <div class="finance-avatar">
+                                        <div class="avatar-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="finance-card">
+                                    <div class="card-balance">
+                                        <span class="balance-label">Total Balance</span>
+                                        <span class="balance-amount">$12,458.20</span>
+                                    </div>
+                                    <div class="card-chart">
+                                        <svg viewBox="0 0 100 40" class="mini-chart">
+                                            <polyline points="0,35 15,28 30,32 45,20 60,25 75,15 90,18 100,10" fill="none" stroke="#4ade80" stroke-width="2"/>
+                                            <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0.3"/>
+                                                <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0"/>
+                                            </linearGradient>
+                                            <polygon points="0,35 15,28 30,32 45,20 60,25 75,15 90,18 100,10 100,40 0,40" fill="url(#chartGrad)"/>
+                                        </svg>
+                                    </div>
+                                    <div class="card-trend">
+                                        <span class="trend-up">+12.5%</span>
+                                        <span class="trend-period">vs last month</span>
+                                    </div>
+                                </div>
+                                <div class="finance-actions">
+                                    <div class="action-btn">
+                                        <div class="action-icon send"></div>
+                                        <span>Send</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <div class="action-icon receive"></div>
+                                        <span>Receive</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <div class="action-icon pay"></div>
+                                        <span>Pay</span>
+                                    </div>
+                                </div>
+                                <div class="finance-transactions">
+                                    <div class="transaction-item">
+                                        <div class="transaction-icon shopping"></div>
+                                        <div class="transaction-details">
+                                            <span class="transaction-name">Shopping</span>
+                                            <span class="transaction-date">Today, 2:30 PM</span>
+                                        </div>
+                                        <span class="transaction-amount negative">-$85.00</span>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="transaction-icon income"></div>
+                                        <div class="transaction-details">
+                                            <span class="transaction-name">Salary</span>
+                                            <span class="transaction-date">Mar 1, 9:00 AM</span>
+                                        </div>
+                                        <span class="transaction-amount positive">+$4,500</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="phone-home-indicator"></div>
                     </div>
+
+                    <!-- Phone 2: Social/Chat App -->
                     <div class="phone phone-2">
+                        <div class="phone-notch"></div>
                         <div class="phone-screen">
-                            <div class="app-header dark"></div>
-                            <div class="app-content">
-                                <div class="app-image"></div>
-                                <div class="app-text"></div>
+                            <div class="screen-status-bar dark">
+                                <span class="time">9:41</span>
+                                <div class="status-icons">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" opacity="0.3"/></svg>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9z"/></svg>
+                                    <svg viewBox="0 0 24 24" width="18" height="14" fill="currentColor"><rect x="2" y="7" width="18" height="10" rx="2"/></svg>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="phone phone-3">
-                        <div class="phone-screen">
-                            <div class="app-header orange"></div>
-                            <div class="app-content">
-                                <div class="app-gallery">
-                                    <div class="gallery-item"></div>
-                                    <div class="gallery-item"></div>
+                            <div class="app-social">
+                                <div class="social-header">
+                                    <div class="back-btn">
+                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                                    </div>
+                                    <div class="chat-user">
+                                        <div class="chat-avatar"></div>
+                                        <div class="chat-info">
+                                            <span class="chat-name">Design Team</span>
+                                            <span class="chat-status">5 members online</span>
+                                        </div>
+                                    </div>
+                                    <div class="more-btn">
+                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                                    </div>
+                                </div>
+                                <div class="chat-messages">
+                                    <div class="message received">
+                                        <div class="message-avatar"></div>
+                                        <div class="message-content">
+                                            <div class="message-bubble">Hey! The new designs are ready for review</div>
+                                            <span class="message-time">9:32 AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="message sent">
+                                        <div class="message-content">
+                                            <div class="message-bubble">Great! I'll check them now</div>
+                                            <span class="message-time">9:35 AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="message received">
+                                        <div class="message-avatar"></div>
+                                        <div class="message-content">
+                                            <div class="message-bubble file">
+                                                <div class="file-icon"></div>
+                                                <div class="file-info">
+                                                    <span class="file-name">UI_Kit_v2.fig</span>
+                                                    <span class="file-size">2.4 MB</span>
+                                                </div>
+                                            </div>
+                                            <span class="message-time">9:36 AM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-input">
+                                    <div class="input-field">Type a message...</div>
+                                    <div class="send-btn"></div>
                                 </div>
                             </div>
                         </div>
+                        <div class="phone-home-indicator dark"></div>
+                    </div>
+
+                    <!-- Phone 3: E-commerce/Travel App -->
+                    <div class="phone phone-3">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-status-bar">
+                                <span class="time">9:41</span>
+                                <div class="status-icons">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" opacity="0.3"/></svg>
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9z"/></svg>
+                                    <svg viewBox="0 0 24 24" width="18" height="14" fill="currentColor"><rect x="2" y="7" width="18" height="10" rx="2"/></svg>
+                                </div>
+                            </div>
+                            <div class="app-travel">
+                                <div class="travel-hero">
+                                    <div class="hero-image"></div>
+                                    <div class="hero-overlay">
+                                        <span class="hero-label">Featured</span>
+                                        <span class="hero-title">Bali, Indonesia</span>
+                                        <div class="hero-rating">
+                                            <span class="stars">★★★★★</span>
+                                            <span class="rating-count">4.9 (2.3k)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="travel-search">
+                                    <div class="search-icon"></div>
+                                    <span>Search destinations...</span>
+                                </div>
+                                <div class="travel-categories">
+                                    <div class="category active">
+                                        <div class="category-icon flights"></div>
+                                        <span>Flights</span>
+                                    </div>
+                                    <div class="category">
+                                        <div class="category-icon hotels"></div>
+                                        <span>Hotels</span>
+                                    </div>
+                                    <div class="category">
+                                        <div class="category-icon cars"></div>
+                                        <span>Cars</span>
+                                    </div>
+                                </div>
+                                <div class="travel-deals">
+                                    <span class="deals-title">Hot Deals</span>
+                                    <div class="deal-cards">
+                                        <div class="deal-card">
+                                            <div class="deal-image"></div>
+                                            <div class="deal-info">
+                                                <span class="deal-place">Tokyo</span>
+                                                <span class="deal-price">$599</span>
+                                            </div>
+                                        </div>
+                                        <div class="deal-card">
+                                            <div class="deal-image paris"></div>
+                                            <div class="deal-info">
+                                                <span class="deal-place">Paris</span>
+                                                <span class="deal-price">$449</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-home-indicator"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- Trust Badges -->
+            <!-- Trust Badges - Enhanced -->
             <div class="trust-section">
                 <div class="trust-badge">
-                    <div class="badge-circle">
-                        <span class="curved-text">Companies who trusted us</span>
+                    <svg class="badge-svg" viewBox="0 0 120 120">
+                        <defs>
+                            <path id="circlePath" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/>
+                        </defs>
+                        <circle cx="60" cy="60" r="50" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4,4"/>
+                        <text class="badge-text">
+                            <textPath href="#circlePath" startOffset="0%">
+                                ★ COMPANIES WHO TRUSTED US ★ COMPANIES WHO TRUSTED US
+                            </textPath>
+                        </text>
+                    </svg>
+                    <div class="badge-center">
+                        <span class="badge-number">50+</span>
+                        <span class="badge-label">Clients</span>
                     </div>
                 </div>
-                <div class="trust-icons">
-                    <div class="trust-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1"/>
-                            <path d="M8,12 L11,15 L16,9" fill="none" stroke="currentColor" stroke-width="2"/>
+                <div class="trust-logos">
+                    <div class="trust-logo">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="16" stroke="#6366f1" stroke-width="2"/>
+                            <path d="M14 20l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="trust-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1"/>
-                            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                    <div class="trust-logo">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="8" width="24" height="24" rx="4" stroke="#10b981" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="6" stroke="#10b981" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="trust-logo">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <path d="M20 6l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8l4-8z" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round"/>
                         </svg>
                     </div>
                 </div>
@@ -181,6 +462,9 @@
 
         <!-- Floating particles for ambiance -->
         <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
