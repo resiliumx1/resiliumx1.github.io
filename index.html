@@ -3,475 +3,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResiliumX - We Build Apps That Go Live Fast</title>
+    <meta name="description" content="Select Start Gaming - Antigua's Premier Gaming & Electronics Hub. Gaming PCs, Consoles, Repairs, Tournaments, and Starlink Rentals.">
+    <meta name="keywords" content="gaming store Antigua, gaming PC Antigua, PlayStation 5 Antigua, Xbox Antigua, computer repair Antigua, gaming tournaments Caribbean">
+    <title>Select Start Gaming | Antigua's Ultimate Gaming & Tech Destination</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FF3333' stroke='%23FF3333' stroke-width='5'/%3E%3Cpath d='M50 25 L50 50' stroke='white' stroke-width='8' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='white' stroke-width='6'/%3E%3C/svg%3E">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Select Start Gaming | Antigua's Ultimate Gaming & Tech Destination">
+    <meta property="og:description" content="Premium Gaming PCs, Latest Consoles, Pro Repairs, and Epic Tournaments in Antigua">
+    <meta property="og:type" content="website">
 </head>
 <body>
+    <!-- Floating Particles Background -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="20" fill="#FF3333"/>
+                        <path d="M25 12 L25 25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="25" cy="25" r="14" fill="none" stroke="white" stroke-width="3"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="select">SELECT</span>
+                    <span class="start">START</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="tournaments.html" class="nav-link">Tournaments</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="currency-toggle">
+                    <button class="currency-btn active" data-currency="usd">USD</button>
+                    <button class="currency-btn" data-currency="xcd">XCD</button>
+                </div>
+                <button class="cart-btn" id="cartBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"/>
+                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"/>
+                        <path d="M1 1H5L7.68 14.39C7.77 14.83 8.02 15.22 8.38 15.5C8.74 15.78 9.19 15.93 9.64 15.92H19.36C19.81 15.93 20.26 15.78 20.62 15.5C20.98 15.22 21.23 14.83 21.32 14.39L23 6H6"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
     <section class="hero">
-        <!-- Background Grid -->
-        <div class="grid-background"></div>
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+        </div>
 
-        <!-- Hero Content -->
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="title-gray">STOP PLANNING.</span>
-                <span class="title-dark">START LAUNCHING. WE BUILD APPS THAT GO LIVE FAST</span>
-            </h1>
-            <p class="hero-subtitle">
-                We craft AI-powered Flutter apps that help startups and SMEs move faster and grow smarter.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn btn-outline">VIEW PORTFOLIO</button>
-                <button class="btn btn-primary">GET A QUOTE</button>
+            <div class="hero-badge">
+                <span>Antigua's #1 Gaming Store</span>
             </div>
-        </div>
-
-        <!-- Animated Carousel Pipeline -->
-        <div class="pipeline-container">
-            <!-- Ideas Input Side (Left) -->
-            <div class="ideas-input">
-                <!-- Floating idea bubbles with detailed avatars -->
-                <div class="idea-bubble idea-1">
-                    <div class="user-avatar">
-                        <div class="avatar-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
-                            <svg viewBox="0 0 36 36" fill="none">
-                                <circle cx="18" cy="12" r="7" fill="white" opacity="0.9"/>
-                                <path d="M18 22c-8 0-12 4-12 8v2h24v-2c0-4-4-8-12-8z" fill="white" opacity="0.9"/>
-                            </svg>
-                        </div>
-                        <div class="avatar-status online"></div>
-                    </div>
-                    <div class="thought-cloud">
-                        <div class="cloud-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
-                        </div>
-                        <span>AI App</span>
-                    </div>
-                    <div class="connector-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                </div>
-
-                <div class="idea-bubble idea-2">
-                    <div class="user-avatar small">
-                        <div class="avatar-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-                            <svg viewBox="0 0 36 36" fill="none">
-                                <circle cx="18" cy="12" r="7" fill="white" opacity="0.9"/>
-                                <path d="M18 22c-8 0-12 4-12 8v2h24v-2c0-4-4-8-12-8z" fill="white" opacity="0.9"/>
-                            </svg>
-                        </div>
-                        <div class="avatar-status away"></div>
-                    </div>
-                    <div class="thought-cloud small">
-                        <div class="cloud-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                <path d="M9 9h6v6H9z"/>
-                            </svg>
-                        </div>
-                        <span>SaaS</span>
-                    </div>
-                    <div class="connector-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                </div>
-
-                <div class="idea-bubble idea-3">
-                    <div class="user-avatar tiny">
-                        <div class="avatar-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
-                            <svg viewBox="0 0 36 36" fill="none">
-                                <circle cx="18" cy="12" r="7" fill="white" opacity="0.9"/>
-                                <path d="M18 22c-8 0-12 4-12 8v2h24v-2c0-4-4-8-12-8z" fill="white" opacity="0.9"/>
-                            </svg>
-                        </div>
-                        <div class="avatar-status online"></div>
-                    </div>
-                    <div class="thought-cloud tiny">
-                        <div class="cloud-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                            </svg>
-                        </div>
-                        <span>MVP</span>
-                    </div>
-                    <div class="connector-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                </div>
+            <h1>Level Up Your <span class="text-gradient">Gaming Experience</span></h1>
+            <p class="hero-subtitle">Premium Gaming PCs | Latest Consoles | Pro Repairs | Epic Tournaments</p>
+            <div class="hero-ctas">
+                <a href="shop.html" class="btn btn-primary btn-lg btn-pulse">Shop Now</a>
+                <a href="tournaments.html" class="btn btn-secondary btn-lg">Join Tournament</a>
             </div>
 
-            <!-- Conveyor Belt with Tech Icons -->
-            <div class="conveyor-belt">
-                <svg class="conveyor-path" viewBox="0 0 600 200" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="beltGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#c5d0e6;stop-opacity:0.3" />
-                            <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.5" />
-                            <stop offset="100%" style="stop-color:#c5d0e6;stop-opacity:0.3" />
-                        </linearGradient>
-                    </defs>
-                    <path class="belt-line" d="M0,150 Q150,150 200,100 T400,100 T600,50" fill="none" stroke="url(#beltGradient)" stroke-width="3" stroke-dasharray="12,8"/>
-                    <path class="belt-line-glow" d="M0,150 Q150,150 200,100 T400,100 T600,50" fill="none" stroke="#6366f1" stroke-width="1" stroke-dasharray="12,8" opacity="0.3"/>
-                </svg>
-
-                <!-- Animated tech icons on the belt -->
-                <div class="tech-icons">
-                    <div class="tech-icon icon-1">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
-                        <div class="icon-glow"></div>
-                    </div>
-                    <div class="tech-icon icon-2">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
-                        <div class="icon-glow"></div>
-                    </div>
-                    <div class="tech-icon icon-3">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
-                        <div class="icon-glow"></div>
-                    </div>
-                    <div class="tech-icon icon-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                        <div class="icon-glow"></div>
-                    </div>
-                    <div class="tech-icon icon-5">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                        <div class="icon-glow"></div>
-                    </div>
-                    <div class="tech-icon icon-6">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
-                        <div class="icon-glow"></div>
-                    </div>
+            <div class="trust-bar">
+                <div class="trust-item">
+                    <span class="trust-icon">&#9889;</span>
+                    <span>Same-Day Repairs</span>
                 </div>
-            </div>
-
-            <!-- Central Processing Box - Enhanced -->
-            <div class="processing-box">
-                <div class="box-3d">
-                    <div class="box-face box-front">
-                        <div class="box-logo">
-                            <svg viewBox="0 0 40 40" fill="none">
-                                <rect x="8" y="8" width="24" height="24" rx="4" stroke="white" stroke-width="2" opacity="0.5"/>
-                                <rect x="14" y="14" width="12" height="12" rx="2" fill="white" opacity="0.8"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="box-face box-top">
-                        <div class="box-pattern">
-                            <span></span><span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <div class="box-face box-right"></div>
+                <div class="trust-item">
+                    <span class="trust-icon">&#127760;</span>
+                    <span>Starlink Mini Rentals</span>
                 </div>
-                <div class="mascot">
-                    <svg viewBox="0 0 120 120" class="bird-mascot">
-                        <!-- Body -->
-                        <ellipse cx="60" cy="70" rx="35" ry="30" fill="#4ECDC4"/>
-                        <ellipse cx="60" cy="65" rx="30" ry="27" fill="#45B7AA"/>
-                        <!-- Belly highlight -->
-                        <ellipse cx="60" cy="72" rx="20" ry="18" fill="#5FE3D9" opacity="0.5"/>
-                        <!-- Eyes -->
-                        <ellipse cx="47" cy="55" rx="8" ry="9" fill="white"/>
-                        <ellipse cx="73" cy="55" rx="8" ry="9" fill="white"/>
-                        <circle cx="49" cy="56" r="5" fill="#2D3748"/>
-                        <circle cx="75" cy="56" r="5" fill="#2D3748"/>
-                        <circle cx="50" cy="54" r="2" fill="white"/>
-                        <circle cx="76" cy="54" r="2" fill="white"/>
-                        <!-- Beak -->
-                        <path d="M55,65 Q60,72 65,65 Q60,68 55,65" fill="#FF8C42"/>
-                        <!-- Blush -->
-                        <ellipse cx="38" cy="65" rx="6" ry="4" fill="#FFB6C1" opacity="0.6"/>
-                        <ellipse cx="82" cy="65" rx="6" ry="4" fill="#FFB6C1" opacity="0.6"/>
-                        <!-- Wings -->
-                        <ellipse cx="28" cy="75" rx="12" ry="8" fill="#4ECDC4"/>
-                        <ellipse cx="92" cy="75" rx="12" ry="8" fill="#4ECDC4"/>
-                        <!-- Feet -->
-                        <path d="M50,95 L45,105 M50,95 L50,105 M50,95 L55,105" stroke="#FF8C42" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M70,95 L65,105 M70,95 L70,105 M70,95 L75,105" stroke="#FF8C42" stroke-width="3" stroke-linecap="round"/>
-                        <!-- Hair/Tuft -->
-                        <path d="M55,35 Q60,25 65,35" stroke="#45B7AA" stroke-width="4" fill="none" stroke-linecap="round"/>
-                        <path d="M50,38 Q55,30 60,38" stroke="#4ECDC4" stroke-width="3" fill="none" stroke-linecap="round"/>
-                    </svg>
+                <div class="trust-item">
+                    <span class="trust-icon">&#127942;</span>
+                    <span>Monthly Tournaments</span>
                 </div>
-                <div class="processing-glow"></div>
-                <div class="processing-rings">
-                    <div class="ring ring-1"></div>
-                    <div class="ring ring-2"></div>
-                    <div class="ring ring-3"></div>
-                </div>
-            </div>
-
-            <!-- Apps Output Side (Right) - Detailed Phone Screens -->
-            <div class="apps-output">
-                <div class="phone-stack">
-                    <!-- Phone 1: Finance/Banking App -->
-                    <div class="phone phone-1">
-                        <div class="phone-notch"></div>
-                        <div class="phone-screen">
-                            <div class="screen-status-bar">
-                                <span class="time">9:41</span>
-                                <div class="status-icons">
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" opacity="0.3"/><path d="M12 3c-4.97 0-9 4.03-9 9h2c0-3.87 3.13-7 7-7V3z"/></svg>
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
-                                    <svg viewBox="0 0 24 24" width="18" height="14" fill="currentColor"><rect x="2" y="7" width="18" height="10" rx="2" opacity="0.3"/><rect x="20" y="10" width="2" height="4" rx="1"/></svg>
-                                </div>
-                            </div>
-                            <div class="app-finance">
-                                <div class="finance-header">
-                                    <div class="finance-greeting">
-                                        <span class="greeting-text">Good morning</span>
-                                        <span class="user-name">Sarah</span>
-                                    </div>
-                                    <div class="finance-avatar">
-                                        <div class="avatar-circle"></div>
-                                    </div>
-                                </div>
-                                <div class="finance-card">
-                                    <div class="card-balance">
-                                        <span class="balance-label">Total Balance</span>
-                                        <span class="balance-amount">$12,458.20</span>
-                                    </div>
-                                    <div class="card-chart">
-                                        <svg viewBox="0 0 100 40" class="mini-chart">
-                                            <polyline points="0,35 15,28 30,32 45,20 60,25 75,15 90,18 100,10" fill="none" stroke="#4ade80" stroke-width="2"/>
-                                            <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0.3"/>
-                                                <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0"/>
-                                            </linearGradient>
-                                            <polygon points="0,35 15,28 30,32 45,20 60,25 75,15 90,18 100,10 100,40 0,40" fill="url(#chartGrad)"/>
-                                        </svg>
-                                    </div>
-                                    <div class="card-trend">
-                                        <span class="trend-up">+12.5%</span>
-                                        <span class="trend-period">vs last month</span>
-                                    </div>
-                                </div>
-                                <div class="finance-actions">
-                                    <div class="action-btn">
-                                        <div class="action-icon send"></div>
-                                        <span>Send</span>
-                                    </div>
-                                    <div class="action-btn">
-                                        <div class="action-icon receive"></div>
-                                        <span>Receive</span>
-                                    </div>
-                                    <div class="action-btn">
-                                        <div class="action-icon pay"></div>
-                                        <span>Pay</span>
-                                    </div>
-                                </div>
-                                <div class="finance-transactions">
-                                    <div class="transaction-item">
-                                        <div class="transaction-icon shopping"></div>
-                                        <div class="transaction-details">
-                                            <span class="transaction-name">Shopping</span>
-                                            <span class="transaction-date">Today, 2:30 PM</span>
-                                        </div>
-                                        <span class="transaction-amount negative">-$85.00</span>
-                                    </div>
-                                    <div class="transaction-item">
-                                        <div class="transaction-icon income"></div>
-                                        <div class="transaction-details">
-                                            <span class="transaction-name">Salary</span>
-                                            <span class="transaction-date">Mar 1, 9:00 AM</span>
-                                        </div>
-                                        <span class="transaction-amount positive">+$4,500</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone-home-indicator"></div>
-                    </div>
-
-                    <!-- Phone 2: Social/Chat App -->
-                    <div class="phone phone-2">
-                        <div class="phone-notch"></div>
-                        <div class="phone-screen">
-                            <div class="screen-status-bar dark">
-                                <span class="time">9:41</span>
-                                <div class="status-icons">
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" opacity="0.3"/></svg>
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9z"/></svg>
-                                    <svg viewBox="0 0 24 24" width="18" height="14" fill="currentColor"><rect x="2" y="7" width="18" height="10" rx="2"/></svg>
-                                </div>
-                            </div>
-                            <div class="app-social">
-                                <div class="social-header">
-                                    <div class="back-btn">
-                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                                    </div>
-                                    <div class="chat-user">
-                                        <div class="chat-avatar"></div>
-                                        <div class="chat-info">
-                                            <span class="chat-name">Design Team</span>
-                                            <span class="chat-status">5 members online</span>
-                                        </div>
-                                    </div>
-                                    <div class="more-btn">
-                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
-                                    </div>
-                                </div>
-                                <div class="chat-messages">
-                                    <div class="message received">
-                                        <div class="message-avatar"></div>
-                                        <div class="message-content">
-                                            <div class="message-bubble">Hey! The new designs are ready for review</div>
-                                            <span class="message-time">9:32 AM</span>
-                                        </div>
-                                    </div>
-                                    <div class="message sent">
-                                        <div class="message-content">
-                                            <div class="message-bubble">Great! I'll check them now</div>
-                                            <span class="message-time">9:35 AM</span>
-                                        </div>
-                                    </div>
-                                    <div class="message received">
-                                        <div class="message-avatar"></div>
-                                        <div class="message-content">
-                                            <div class="message-bubble file">
-                                                <div class="file-icon"></div>
-                                                <div class="file-info">
-                                                    <span class="file-name">UI_Kit_v2.fig</span>
-                                                    <span class="file-size">2.4 MB</span>
-                                                </div>
-                                            </div>
-                                            <span class="message-time">9:36 AM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="chat-input">
-                                    <div class="input-field">Type a message...</div>
-                                    <div class="send-btn"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone-home-indicator dark"></div>
-                    </div>
-
-                    <!-- Phone 3: E-commerce/Travel App -->
-                    <div class="phone phone-3">
-                        <div class="phone-notch"></div>
-                        <div class="phone-screen">
-                            <div class="screen-status-bar">
-                                <span class="time">9:41</span>
-                                <div class="status-icons">
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" opacity="0.3"/></svg>
-                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9z"/></svg>
-                                    <svg viewBox="0 0 24 24" width="18" height="14" fill="currentColor"><rect x="2" y="7" width="18" height="10" rx="2"/></svg>
-                                </div>
-                            </div>
-                            <div class="app-travel">
-                                <div class="travel-hero">
-                                    <div class="hero-image"></div>
-                                    <div class="hero-overlay">
-                                        <span class="hero-label">Featured</span>
-                                        <span class="hero-title">Bali, Indonesia</span>
-                                        <div class="hero-rating">
-                                            <span class="stars">★★★★★</span>
-                                            <span class="rating-count">4.9 (2.3k)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="travel-search">
-                                    <div class="search-icon"></div>
-                                    <span>Search destinations...</span>
-                                </div>
-                                <div class="travel-categories">
-                                    <div class="category active">
-                                        <div class="category-icon flights"></div>
-                                        <span>Flights</span>
-                                    </div>
-                                    <div class="category">
-                                        <div class="category-icon hotels"></div>
-                                        <span>Hotels</span>
-                                    </div>
-                                    <div class="category">
-                                        <div class="category-icon cars"></div>
-                                        <span>Cars</span>
-                                    </div>
-                                </div>
-                                <div class="travel-deals">
-                                    <span class="deals-title">Hot Deals</span>
-                                    <div class="deal-cards">
-                                        <div class="deal-card">
-                                            <div class="deal-image"></div>
-                                            <div class="deal-info">
-                                                <span class="deal-place">Tokyo</span>
-                                                <span class="deal-price">$599</span>
-                                            </div>
-                                        </div>
-                                        <div class="deal-card">
-                                            <div class="deal-image paris"></div>
-                                            <div class="deal-info">
-                                                <span class="deal-place">Paris</span>
-                                                <span class="deal-price">$449</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone-home-indicator"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trust Badges - Enhanced -->
-            <div class="trust-section">
-                <div class="trust-badge">
-                    <svg class="badge-svg" viewBox="0 0 120 120">
-                        <defs>
-                            <path id="circlePath" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/>
-                        </defs>
-                        <circle cx="60" cy="60" r="50" fill="none" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4,4"/>
-                        <text class="badge-text">
-                            <textPath href="#circlePath" startOffset="0%">
-                                ★ COMPANIES WHO TRUSTED US ★ COMPANIES WHO TRUSTED US
-                            </textPath>
-                        </text>
-                    </svg>
-                    <div class="badge-center">
-                        <span class="badge-number">50+</span>
-                        <span class="badge-label">Clients</span>
-                    </div>
-                </div>
-                <div class="trust-logos">
-                    <div class="trust-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <circle cx="20" cy="20" r="16" stroke="#6366f1" stroke-width="2"/>
-                            <path d="M14 20l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="trust-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <rect x="8" y="8" width="24" height="24" rx="4" stroke="#10b981" stroke-width="2"/>
-                            <circle cx="20" cy="20" r="6" stroke="#10b981" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="trust-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <path d="M20 6l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8l4-8z" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
+                <div class="trust-item">
+                    <span class="trust-icon">&#128274;</span>
+                    <span>Secure Payments</span>
                 </div>
             </div>
         </div>
 
-        <!-- Floating particles for ambiance -->
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
         </div>
     </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="text-gradient">Services</span></h2>
+                <p>Everything you need for the ultimate gaming experience</p>
+            </div>
+
+            <div class="services-grid stagger-children">
+                <div class="card service-card">
+                    <div class="service-icon">
+                        <span class="icon-emoji">&#128187;</span>
+                    </div>
+                    <h3>Gaming PCs & Laptops</h3>
+                    <p>Custom builds & pre-configured gaming rigs for every budget</p>
+                    <a href="shop.html?category=pcs" class="btn btn-sm btn-outline">Browse PCs</a>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon">
+                        <span class="icon-emoji">&#127918;</span>
+                    </div>
+                    <h3>Consoles & Accessories</h3>
+                    <p>PS5, Xbox Series X/S, Nintendo Switch + all accessories</p>
+                    <a href="shop.html?category=consoles" class="btn btn-sm btn-outline">Shop Consoles</a>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon">
+                        <span class="icon-emoji">&#128295;</span>
+                    </div>
+                    <h3>Repair Services</h3>
+                    <p>Expert repairs for PCs, consoles & mobile devices</p>
+                    <a href="#contact" class="btn btn-sm btn-outline">Book Repair</a>
+                </div>
+
+                <div class="card service-card">
+                    <div class="service-icon">
+                        <span class="icon-emoji">&#128752;</span>
+                    </div>
+                    <h3>Starlink Mini Rentals</h3>
+                    <p>Portable high-speed internet for events & travel</p>
+                    <a href="#contact" class="btn btn-sm btn-outline">Rent Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="text-gradient">Products</span></h2>
+                <p>Top picks from our gaming arsenal</p>
+            </div>
+
+            <div class="products-carousel stagger-children">
+                <!-- Product 1: Gaming PC -->
+                <div class="card product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-hot">Hot</span>
+                        <button class="wishlist-btn">&#9829;</button>
+                        <span class="placeholder-icon">&#128187;</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Custom Build</span>
+                        <h4 class="product-title">RTX 4070 Gaming PC</h4>
+                        <div class="product-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-count">(23)</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current" data-usd="1299" data-xcd="3507">$1,299</span>
+                            <span class="price-dual">XCD $3,507</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="quick-view-btn">&#128065;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: PS5 -->
+                <div class="card product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">New</span>
+                        <button class="wishlist-btn">&#9829;</button>
+                        <span class="placeholder-icon">&#127918;</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Sony</span>
+                        <h4 class="product-title">PlayStation 5 Pro</h4>
+                        <div class="product-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current" data-usd="699" data-xcd="1887">$699</span>
+                            <span class="price-dual">XCD $1,887</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="quick-view-btn">&#128065;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Gaming Monitor -->
+                <div class="card product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-sale">20% Off</span>
+                        <button class="wishlist-btn">&#9829;</button>
+                        <span class="placeholder-icon">&#128421;</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">ASUS</span>
+                        <h4 class="product-title">ROG Swift 27" 165Hz Monitor</h4>
+                        <div class="product-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current" data-usd="349" data-xcd="942">$349</span>
+                            <span class="price-original">$449</span>
+                            <span class="price-dual">XCD $942</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="quick-view-btn">&#128065;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Gaming Keyboard -->
+                <div class="card product-card">
+                    <div class="product-image">
+                        <button class="wishlist-btn">&#9829;</button>
+                        <span class="placeholder-icon">&#9000;</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Razer</span>
+                        <h4 class="product-title">BlackWidow V4 Pro Keyboard</h4>
+                        <div class="product-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current" data-usd="229" data-xcd="618">$229</span>
+                            <span class="price-dual">XCD $618</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="quick-view-btn">&#128065;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="shop.html" class="btn btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Teaser Section -->
+    <section class="tournament-teaser">
+        <div class="container">
+            <div class="tournament-card">
+                <div class="tournament-image">
+                    <div class="tournament-badge-large">
+                        <div class="trophy">&#127942;</div>
+                        <h3>CARIBBEAN<br>CHAMPIONSHIP</h3>
+                    </div>
+                </div>
+                <div class="tournament-info">
+                    <div class="tournament-live-badge">
+                        <span class="pulse-dot"></span>
+                        Registration Open
+                    </div>
+                    <h3>Call of Duty Championship</h3>
+                    <p class="tournament-game">Call of Duty: Modern Warfare III - 4v4 Team Battle</p>
+
+                    <div class="tournament-details">
+                        <div class="tournament-detail">
+                            <label>Date</label>
+                            <span>March 15-16, 2026</span>
+                        </div>
+                        <div class="tournament-detail">
+                            <label>Time</label>
+                            <span>6:00 PM AST</span>
+                        </div>
+                        <div class="tournament-detail">
+                            <label>Format</label>
+                            <span>Double Elimination</span>
+                        </div>
+                        <div class="tournament-detail">
+                            <label>Platform</label>
+                            <span>PlayStation 5</span>
+                        </div>
+                    </div>
+
+                    <div class="tournament-prize">
+                        <label>Prize Pool</label>
+                        <span class="amount">$1,000 USD</span>
+                    </div>
+
+                    <div class="tournament-spots">
+                        <div class="spots-bar">
+                            <div class="spots-fill" style="width: 56%;"></div>
+                        </div>
+                        <span class="spots-text">18/32 Teams</span>
+                    </div>
+
+                    <a href="tournaments.html" class="btn btn-tertiary btn-lg btn-pulse">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why <span class="text-gradient">Choose Us</span></h2>
+                <p>The Select Start Gaming difference</p>
+            </div>
+
+            <div class="why-grid stagger-children">
+                <div class="why-card">
+                    <div class="why-icon">&#127919;</div>
+                    <h4>Expert Knowledge</h4>
+                    <p>Our team lives and breathes gaming</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">&#9889;</div>
+                    <h4>Fast Service</h4>
+                    <p>Same-day repairs, quick shipping</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">&#128176;</div>
+                    <h4>Best Prices</h4>
+                    <p>Price match guarantee in Caribbean</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">&#127942;</div>
+                    <h4>Community</h4>
+                    <p>Building Antigua's gaming scene</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">&#128274;</div>
+                    <h4>Secure Shopping</h4>
+                    <p>SSL encrypted, trusted payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the <span class="text-gradient-secondary">Player's Club</span></h2>
+                <p>Get exclusive deals, tournament alerts & gaming news</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                <p class="newsletter-incentive">Sign up & get 10% off your first purchase!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="20" fill="#FF3333"/>
+                                <path d="M25 12 L25 25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                                <circle cx="25" cy="25" r="14" fill="none" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="select">SELECT</span>
+                            <span class="start">START</span>
+                        </div>
+                    </a>
+                    <p>Antigua's premier destination for gaming PCs, consoles, repairs, and epic tournaments. Level up with us!</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=pcs">Gaming PCs</a></li>
+                        <li><a href="shop.html?category=consoles">Consoles</a></li>
+                        <li><a href="shop.html?category=components">Components</a></li>
+                        <li><a href="shop.html?category=peripherals">Peripherals</a></li>
+                        <li><a href="shop.html?category=games">Games</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Computer Repairs</a></li>
+                        <li><a href="#">Custom PC Builds</a></li>
+                        <li><a href="#">Starlink Rentals</a></li>
+                        <li><a href="#">Trade-In Program</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>St. John's, Antigua</li>
+                        <li><a href="tel:+12684621234">+1 (268) 462-1234</a></li>
+                        <li><a href="mailto:info@selectstartgaming.com">info@selectstartgaming.com</a></li>
+                        <li>Mon-Sat: 10AM - 8PM</li>
+                        <li>Sun: 12PM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Select Start Gaming. All rights reserved.</p>
+                <div class="footer-payments">
+                    <div class="payment-icon">VISA</div>
+                    <div class="payment-icon">MC</div>
+                    <div class="payment-icon">AMEX</div>
+                    <div class="payment-icon">PP</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
