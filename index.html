@@ -3,486 +3,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Select Start Gaming - Antigua's Premier Gaming & Electronics Hub. Gaming PCs, Consoles, Repairs, Tournaments, and Starlink Rentals.">
-    <meta name="keywords" content="gaming store Antigua, gaming PC Antigua, PlayStation 5 Antigua, Xbox Antigua, computer repair Antigua, gaming tournaments Caribbean">
-    <title>Select Start Gaming | Antigua's Ultimate Gaming & Tech Destination</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FF3333' stroke='%23FF3333' stroke-width='5'/%3E%3Cpath d='M50 25 L50 50' stroke='white' stroke-width='8' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='white' stroke-width='6'/%3E%3C/svg%3E">
+    <meta name="description" content="New Horizon Digital — AI-powered marketing agency in Antigua and Barbuda. Social media, SEO, WhatsApp marketing, and more for Caribbean hotels, restaurants, and tour operators.">
+    <meta name="keywords" content="marketing agency Antigua, AI marketing Caribbean, social media management Antigua, SEO Antigua, digital marketing Barbuda, Caribbean marketing agency">
+    <title>New Horizon Digital | AI-Powered Marketing Agency in Antigua</title>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Select Start Gaming | Antigua's Ultimate Gaming & Tech Destination">
-    <meta property="og:description" content="Premium Gaming PCs, Latest Consoles, Pro Repairs, and Epic Tournaments in Antigua">
+    <meta property="og:title" content="New Horizon Digital | AI-Powered Marketing Agency in Antigua">
+    <meta property="og:description" content="AI-powered marketing for Caribbean hotels, restaurants, tour operators, and local businesses. Full agency output. One dedicated partner. Real results in 30 days.">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+    <!-- Favicon (sailboat) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300B4D8'/%3E%3Cstop offset='100%25' stop-color='%230F3460'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='32' fill='%231A1A2E'/%3E%3Cpath d='M32 12 L32 38 L18 38 Z' fill='%2300B4D8'/%3E%3Cpath d='M34 18 L34 38 L46 38 Z' fill='url(%23g)'/%3E%3Cpath d='M14 42 Q32 36 50 42 Q32 46 14 42Z' fill='%2300B4D8'/%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Floating Particles Background -->
-    <div class="particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <!-- Header -->
+    <!-- ========== HEADER / NAV ========== -->
     <header class="header" id="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="20" fill="#FF3333"/>
-                        <path d="M25 12 L25 25" stroke="white" stroke-width="4" stroke-linecap="round"/>
-                        <circle cx="25" cy="25" r="14" fill="none" stroke="white" stroke-width="3"/>
-                    </svg>
-                </div>
-                <div class="logo-text">
-                    <span class="select">SELECT</span>
-                    <span class="start">START</span>
-                </div>
+        <div class="container header__inner">
+            <a href="#hero" class="header__logo" aria-label="New Horizon Digital Home">
+                <!-- Inline SVG logo mark -->
+                <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="24" cy="18" r="12" fill="none" stroke="#E8A838" stroke-width="2.5" stroke-dasharray="40 40" stroke-dashoffset="-20"/>
+                    <path d="M24 8L24 30L16 30Z" fill="#1A1A2E"/>
+                    <path d="M25.5 13L25.5 30L33 30Z" fill="#0F3460"/>
+                    <path d="M8 34 Q24 28 40 34 Q24 38 8 34Z" fill="#00B4D8"/>
+                    <path d="M6 36 Q24 32 42 36 Q24 42 6 36Z" fill="#0F3460" opacity="0.6"/>
+                </svg>
+                <span class="header__logo-text">New Horizon <span class="header__logo-accent">Digital</span></span>
             </a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="shop.html" class="nav-link">Shop</a></li>
-                <li><a href="tournaments.html" class="nav-link">Tournaments</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <nav class="header__nav" id="nav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li><a href="#problem" class="header__nav-link">Why Us</a></li>
+                    <li><a href="#solution" class="header__nav-link">About</a></li>
+                    <li><a href="#services" class="header__nav-link">Services</a></li>
+                    <li><a href="#pricing" class="header__nav-link">Pricing</a></li>
+                    <li><a href="#faq" class="header__nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="header__nav-link header__nav-cta">Free Audit</a></li>
+                </ul>
+            </nav>
 
-            <div class="nav-actions">
-                <div class="currency-toggle">
-                    <button class="currency-btn active" data-currency="usd">USD</button>
-                    <button class="currency-btn" data-currency="xcd">XCD</button>
-                </div>
-                <button class="cart-btn" id="cartBtn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"/>
-                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"/>
-                        <path d="M1 1H5L7.68 14.39C7.77 14.83 8.02 15.22 8.38 15.5C8.74 15.78 9.19 15.93 9.64 15.92H19.36C19.81 15.93 20.26 15.78 20.62 15.5C20.98 15.22 21.23 14.83 21.32 14.39L23 6H6"/>
-                    </svg>
-                    <span class="cart-count">0</span>
-                </button>
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
+            <button class="header__menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="header__menu-bar"></span>
+                <span class="header__menu-bar"></span>
+                <span class="header__menu-bar"></span>
+            </button>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="hero-gradient"></div>
-        </div>
+    <!-- ========== MOBILE NAV OVERLAY ========== -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <ul class="mobile-nav__list">
+            <li><a href="#problem" class="mobile-nav__link">Why Us</a></li>
+            <li><a href="#solution" class="mobile-nav__link">About</a></li>
+            <li><a href="#services" class="mobile-nav__link">Services</a></li>
+            <li><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
+            <li><a href="#faq" class="mobile-nav__link">FAQ</a></li>
+            <li><a href="#contact" class="mobile-nav__link mobile-nav__cta">Get Your Free Audit</a></li>
+        </ul>
+    </div>
 
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>Antigua's #1 Gaming Store</span>
+    <main>
+        <!-- ========== 1. HERO ========== -->
+        <section class="hero" id="hero">
+            <div class="hero__bg" aria-hidden="true">
+                <div class="hero__wave hero__wave--1"></div>
+                <div class="hero__wave hero__wave--2"></div>
             </div>
-            <h1>Level Up Your <span class="text-gradient">Gaming Experience</span></h1>
-            <p class="hero-subtitle">Premium Gaming PCs | Latest Consoles | Pro Repairs | Epic Tournaments</p>
-            <div class="hero-ctas">
-                <a href="shop.html" class="btn btn-primary btn-lg btn-pulse">Shop Now</a>
-                <a href="tournaments.html" class="btn btn-secondary btn-lg">Join Tournament</a>
+            <div class="container hero__content">
+                <h1 class="hero__title fade-up">Your Business Deserves Marketing That Actually Works</h1>
+                <p class="hero__subtitle fade-up">AI-powered marketing for Caribbean hotels, restaurants, tour operators, and local businesses. Full agency output. One dedicated partner. Real results in 30&nbsp;days.</p>
+                <div class="hero__ctas fade-up">
+                    <a href="#contact" class="btn btn--primary">Get Your Free Marketing Audit</a>
+                    <a href="#services" class="btn btn--outline">See What We Do</a>
+                </div>
+                <p class="hero__trust fade-up">Serving businesses across Antigua, St.&nbsp;Lucia, St.&nbsp;Kitts, Barbados, and the wider Caribbean</p>
             </div>
+        </section>
 
-            <div class="trust-bar">
-                <div class="trust-item">
-                    <span class="trust-icon">&#9889;</span>
-                    <span>Same-Day Repairs</span>
+        <!-- ========== 2. PROBLEM ========== -->
+        <section class="section section--gray" id="problem">
+            <div class="container">
+                <h2 class="section__title fade-up">The Marketing Problem Caribbean Businesses Face</h2>
+                <div class="problem-grid">
+                    <div class="problem-card fade-up">
+                        <div class="problem-card__icon">
+                            <!-- Search / not found icon -->
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="14"/><line x1="30" y1="30" x2="42" y2="42"/><line x1="14" y1="16" x2="26" y2="16"/><line x1="14" y1="24" x2="22" y2="24"/></svg>
+                        </div>
+                        <h3 class="problem-card__title">Tourists Can't Find You</h3>
+                        <p class="problem-card__text">Your competitors show up on Google. You don't. Every day, tourists search for "[your business type] in Antigua" and book with someone else.</p>
+                    </div>
+                    <div class="problem-card fade-up">
+                        <div class="problem-card__icon">
+                            <!-- Megaphone / void icon -->
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M36 8 L18 16 L18 32 L36 40Z"/><rect x="8" y="16" width="10" height="16" rx="2"/><path d="M18 36 L14 44"/><circle cx="40" cy="14" r="2" fill="currentColor" stroke="none"/><circle cx="44" cy="24" r="2" fill="currentColor" stroke="none"/><circle cx="40" cy="34" r="2" fill="currentColor" stroke="none"/></svg>
+                        </div>
+                        <h3 class="problem-card__title">Social Media Feels Like Shouting Into the Void</h3>
+                        <p class="problem-card__text">You post when you remember, get 12 likes from the same people, and wonder if it's even worth the effort.</p>
+                    </div>
+                    <div class="problem-card fade-up">
+                        <div class="problem-card__icon">
+                            <!-- Broken promise icon -->
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38 L24 24 L22 14 L28 8"/><path d="M38 38 L24 24"/><path d="M6 10 L16 6"/><path d="M32 42 L38 34"/><circle cx="24" cy="24" r="18" stroke-dasharray="6 4"/></svg>
+                        </div>
+                        <h3 class="problem-card__title">Agencies Overpromise and Underdeliver</h3>
+                        <p class="problem-card__text">You paid $2,000/month to an agency overseas. They sent a monthly PDF you didn't understand. Nothing changed.</p>
+                    </div>
+                    <div class="problem-card fade-up">
+                        <div class="problem-card__icon">
+                            <!-- Clock / busy icon -->
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><polyline points="24,12 24,24 34,28"/><path d="M6 6 L12 12"/><path d="M42 6 L36 12"/></svg>
+                        </div>
+                        <h3 class="problem-card__title">You're Too Busy Running Your Business to Market It</h3>
+                        <p class="problem-card__text">Between managing staff, serving customers, and keeping operations running, marketing always falls to the bottom of the list.</p>
+                    </div>
                 </div>
-                <div class="trust-item">
-                    <span class="trust-icon">&#127760;</span>
-                    <span>Starlink Mini Rentals</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">&#127942;</span>
-                    <span>Monthly Tournaments</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">&#128274;</span>
-                    <span>Secure Payments</span>
-                </div>
+                <p class="section__transition fade-up">Sound familiar? There's a better way.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="scroll-indicator">
-            <span>Scroll to Explore</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 5v14M19 12l-7 7-7-7"/>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section services-section" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our <span class="text-gradient">Services</span></h2>
-                <p>Everything you need for the ultimate gaming experience</p>
-            </div>
-
-            <div class="services-grid stagger-children">
-                <div class="card service-card">
-                    <div class="service-icon">
-                        <span class="icon-emoji">&#128187;</span>
+        <!-- ========== 3. SOLUTION / ABOUT ========== -->
+        <section class="section" id="solution">
+            <div class="container">
+                <h2 class="section__title fade-up">Marketing That Moves As Fast As Your Business</h2>
+                <p class="section__intro fade-up">New Horizon Digital combines AI-powered marketing technology with local Caribbean expertise to deliver what used to require a full agency team&nbsp;&mdash; at a fraction of the cost and 10x the speed. We're not an overseas agency sending you templated reports. We're your dedicated marketing partner, based right here in Antigua, who understands your business and your market.</p>
+                <div class="pillars">
+                    <div class="pillar fade-up">
+                        <div class="pillar__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40 L24 8 L40 40Z"/><circle cx="24" cy="28" r="4"/><line x1="24" y1="18" x2="24" y2="23"/></svg>
+                        </div>
+                        <h3 class="pillar__title">AI-Powered Speed</h3>
+                        <p class="pillar__text">What takes traditional agencies weeks takes us hours. AI handles the heavy lifting&nbsp;&mdash; content creation, competitor research, ad optimization&nbsp;&mdash; while we focus on strategy and results.</p>
                     </div>
-                    <h3>Gaming PCs & Laptops</h3>
-                    <p>Custom builds & pre-configured gaming rigs for every budget</p>
-                    <a href="shop.html?category=pcs" class="btn btn-sm btn-outline">Browse PCs</a>
-                </div>
-
-                <div class="card service-card">
-                    <div class="service-icon">
-                        <span class="icon-emoji">&#127918;</span>
+                    <div class="pillar fade-up">
+                        <div class="pillar__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L24 12"/><circle cx="24" cy="20" r="8"/><path d="M12 28 Q24 36 36 28"/><path d="M8 36 Q24 44 40 36"/></svg>
+                        </div>
+                        <h3 class="pillar__title">Local Presence</h3>
+                        <p class="pillar__text">We walk into your business, understand your customers, and see your challenges firsthand. Try getting that from an agency in India or Miami.</p>
                     </div>
-                    <h3>Consoles & Accessories</h3>
-                    <p>PS5, Xbox Series X/S, Nintendo Switch + all accessories</p>
-                    <a href="shop.html?category=consoles" class="btn btn-sm btn-outline">Shop Consoles</a>
-                </div>
-
-                <div class="card service-card">
-                    <div class="service-icon">
-                        <span class="icon-emoji">&#128295;</span>
-                    </div>
-                    <h3>Repair Services</h3>
-                    <p>Expert repairs for PCs, consoles & mobile devices</p>
-                    <a href="#contact" class="btn btn-sm btn-outline">Book Repair</a>
-                </div>
-
-                <div class="card service-card">
-                    <div class="service-icon">
-                        <span class="icon-emoji">&#128752;</span>
-                    </div>
-                    <h3>Starlink Mini Rentals</h3>
-                    <p>Portable high-speed internet for events & travel</p>
-                    <a href="#contact" class="btn btn-sm btn-outline">Rent Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="section featured-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured <span class="text-gradient">Products</span></h2>
-                <p>Top picks from our gaming arsenal</p>
-            </div>
-
-            <div class="products-carousel stagger-children">
-                <!-- Product 1: Gaming PC -->
-                <div class="card product-card">
-                    <div class="product-image">
-                        <span class="product-badge badge-hot">Hot</span>
-                        <button class="wishlist-btn">&#9829;</button>
-                        <span class="placeholder-icon">&#128187;</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-brand">Custom Build</span>
-                        <h4 class="product-title">RTX 4070 Gaming PC</h4>
-                        <div class="product-rating">
-                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                            <span class="rating-count">(23)</span>
+                    <div class="pillar fade-up">
+                        <div class="pillar__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 36 L12 20 L24 12 L36 20 L36 36Z"/><rect x="18" y="26" width="12" height="10"/><line x1="24" y1="26" x2="24" y2="36"/><path d="M8 20 L24 8 L40 20"/></svg>
                         </div>
-                        <div class="product-pricing">
-                            <span class="price-current" data-usd="1299" data-xcd="3507">$1,299</span>
-                            <span class="price-dual">XCD $3,507</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <button class="quick-view-btn">&#128065;</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 2: PS5 -->
-                <div class="card product-card">
-                    <div class="product-image">
-                        <span class="product-badge badge-new">New</span>
-                        <button class="wishlist-btn">&#9829;</button>
-                        <span class="placeholder-icon">&#127918;</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-brand">Sony</span>
-                        <h4 class="product-title">PlayStation 5 Pro</h4>
-                        <div class="product-rating">
-                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                            <span class="rating-count">(156)</span>
-                        </div>
-                        <div class="product-pricing">
-                            <span class="price-current" data-usd="699" data-xcd="1887">$699</span>
-                            <span class="price-dual">XCD $1,887</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <button class="quick-view-btn">&#128065;</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3: Gaming Monitor -->
-                <div class="card product-card">
-                    <div class="product-image">
-                        <span class="product-badge badge-sale">20% Off</span>
-                        <button class="wishlist-btn">&#9829;</button>
-                        <span class="placeholder-icon">&#128421;</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-brand">ASUS</span>
-                        <h4 class="product-title">ROG Swift 27" 165Hz Monitor</h4>
-                        <div class="product-rating">
-                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                            <span class="rating-count">(89)</span>
-                        </div>
-                        <div class="product-pricing">
-                            <span class="price-current" data-usd="349" data-xcd="942">$349</span>
-                            <span class="price-original">$449</span>
-                            <span class="price-dual">XCD $942</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <button class="quick-view-btn">&#128065;</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 4: Gaming Keyboard -->
-                <div class="card product-card">
-                    <div class="product-image">
-                        <button class="wishlist-btn">&#9829;</button>
-                        <span class="placeholder-icon">&#9000;</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-brand">Razer</span>
-                        <h4 class="product-title">BlackWidow V4 Pro Keyboard</h4>
-                        <div class="product-rating">
-                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                            <span class="rating-count">(67)</span>
-                        </div>
-                        <div class="product-pricing">
-                            <span class="price-current" data-usd="229" data-xcd="618">$229</span>
-                            <span class="price-dual">XCD $618</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="add-to-cart-btn">Add to Cart</button>
-                            <button class="quick-view-btn">&#128065;</button>
-                        </div>
+                        <h3 class="pillar__title">Proven Methodology</h3>
+                        <p class="pillar__text">Our approach is built on direct response marketing principles used by the world's top brands, enhanced with AI tools that multiply output without multiplying cost.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="text-center mt-4">
-                <a href="shop.html" class="btn btn-outline">View All Products</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tournament Teaser Section -->
-    <section class="tournament-teaser">
-        <div class="container">
-            <div class="tournament-card">
-                <div class="tournament-image">
-                    <div class="tournament-badge-large">
-                        <div class="trophy">&#127942;</div>
-                        <h3>CARIBBEAN<br>CHAMPIONSHIP</h3>
-                    </div>
-                </div>
-                <div class="tournament-info">
-                    <div class="tournament-live-badge">
-                        <span class="pulse-dot"></span>
-                        Registration Open
-                    </div>
-                    <h3>Call of Duty Championship</h3>
-                    <p class="tournament-game">Call of Duty: Modern Warfare III - 4v4 Team Battle</p>
-
-                    <div class="tournament-details">
-                        <div class="tournament-detail">
-                            <label>Date</label>
-                            <span>March 15-16, 2026</span>
+        <!-- ========== 4. SERVICES ========== -->
+        <section class="section section--blue" id="services">
+            <div class="container">
+                <h2 class="section__title fade-up">What We Do</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-up">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="18" r="4"/><path d="M6 34 L16 26 L24 32 L34 20 L42 26"/></svg>
                         </div>
-                        <div class="tournament-detail">
-                            <label>Time</label>
-                            <span>6:00 PM AST</span>
-                        </div>
-                        <div class="tournament-detail">
-                            <label>Format</label>
-                            <span>Double Elimination</span>
-                        </div>
-                        <div class="tournament-detail">
-                            <label>Platform</label>
-                            <span>PlayStation 5</span>
-                        </div>
+                        <h3 class="service-card__title">Social Media Management</h3>
+                        <p class="service-card__text">Done-for-you content creation and posting across Facebook, Instagram, and TikTok. AI-generated content calendars, professional graphics, engaging captions, and community management. Your pages stay active and attractive&nbsp;&mdash; without you lifting a finger.</p>
                     </div>
-
-                    <div class="tournament-prize">
-                        <label>Prize Pool</label>
-                        <span class="amount">$1,000 USD</span>
-                    </div>
-
-                    <div class="tournament-spots">
-                        <div class="spots-bar">
-                            <div class="spots-fill" style="width: 56%;"></div>
+                    <div class="service-card fade-up">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="14"/><line x1="30" y1="30" x2="42" y2="42"/><path d="M14 20 L20 26 L28 16"/></svg>
                         </div>
-                        <span class="spots-text">18/32 Teams</span>
+                        <h3 class="service-card__title">Google &amp; Local SEO</h3>
+                        <p class="service-card__text">Get found when tourists and locals search for your business. We optimize your Google Business Profile, build your review strategy, and ensure you rank above competitors for searches like "best [business type] in Antigua."</p>
                     </div>
-
-                    <a href="tournaments.html" class="btn btn-tertiary btn-lg btn-pulse">Register Now</a>
+                    <div class="service-card fade-up">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 38 L8 10 C8 8 10 6 12 6 L36 6 C38 6 40 8 40 10 L40 30 C40 32 38 34 36 34 L16 34 L8 38Z"/><circle cx="16" cy="20" r="2" fill="currentColor" stroke="none"/><circle cx="24" cy="20" r="2" fill="currentColor" stroke="none"/><circle cx="32" cy="20" r="2" fill="currentColor" stroke="none"/></svg>
+                        </div>
+                        <h3 class="service-card__title">WhatsApp Marketing</h3>
+                        <p class="service-card__text">The Caribbean runs on WhatsApp. We set up your WhatsApp Business profile, build broadcast strategies, create automated responses, and design campaigns that get near 100% open rates. Turn your contact list into a revenue engine.</p>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"/><polygon points="20,18 20,32 34,25"/></svg>
+                        </div>
+                        <h3 class="service-card__title">Content &amp; Video Production</h3>
+                        <p class="service-card__text">AI-powered content creation for your brand. Social media graphics, short-form video (Reels, TikTok), email newsletters, and blog content&nbsp;&mdash; all produced at scale with your brand voice and Caribbean authenticity.</p>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L30 16 L44 18 L34 28 L36 42 L24 36 L12 42 L14 28 L4 18 L18 16Z"/></svg>
+                        </div>
+                        <h3 class="service-card__title">Paid Advertising</h3>
+                        <p class="service-card__text">Strategic Facebook, Instagram, and Google ad campaigns targeting tourists planning Caribbean trips and locals searching for your services. We manage your budget, optimize performance, and deliver measurable ROI.</p>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="32" height="36" rx="3"/><line x1="14" y1="14" x2="34" y2="14"/><line x1="14" y1="22" x2="30" y2="22"/><line x1="14" y1="30" x2="26" y2="30"/><circle cx="36" cy="36" r="8" fill="#00B4D8" stroke="#00B4D8"/><path d="M33 36 L36 39 L40 34" stroke="white" stroke-width="2"/></svg>
+                        </div>
+                        <h3 class="service-card__title">Website &amp; Landing Pages</h3>
+                        <p class="service-card__text">Modern, mobile-first websites and landing pages designed to convert visitors into customers. Fast-loading, beautiful, and optimized for bookings, inquiries, or sales.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="section why-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why <span class="text-gradient">Choose Us</span></h2>
-                <p>The Select Start Gaming difference</p>
-            </div>
-
-            <div class="why-grid stagger-children">
-                <div class="why-card">
-                    <div class="why-icon">&#127919;</div>
-                    <h4>Expert Knowledge</h4>
-                    <p>Our team lives and breathes gaming</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">&#9889;</div>
-                    <h4>Fast Service</h4>
-                    <p>Same-day repairs, quick shipping</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">&#128176;</div>
-                    <h4>Best Prices</h4>
-                    <p>Price match guarantee in Caribbean</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">&#127942;</div>
-                    <h4>Community</h4>
-                    <p>Building Antigua's gaming scene</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">&#128274;</div>
-                    <h4>Secure Shopping</h4>
-                    <p>SSL encrypted, trusted payments</p>
+        <!-- ========== 5. HOW IT WORKS ========== -->
+        <section class="section" id="how-it-works">
+            <div class="container">
+                <h2 class="section__title fade-up">How It Works</h2>
+                <div class="steps">
+                    <div class="step fade-up">
+                        <div class="step__number">1</div>
+                        <h3 class="step__title">Free Marketing Audit</h3>
+                        <p class="step__text">We analyze your online presence&nbsp;&mdash; Google, social media, website, reviews&nbsp;&mdash; and show you exactly where you're losing customers. No cost, no obligation.</p>
+                    </div>
+                    <div class="step fade-up">
+                        <div class="step__number">2</div>
+                        <h3 class="step__title">Custom Strategy</h3>
+                        <p class="step__text">Based on the audit, we build a marketing plan tailored to your business, your goals, and your budget. You approve the direction before we start.</p>
+                    </div>
+                    <div class="step fade-up">
+                        <div class="step__number">3</div>
+                        <h3 class="step__title">AI-Powered Execution</h3>
+                        <p class="step__text">Our AI marketing systems get to work&nbsp;&mdash; creating content, optimizing your profiles, running campaigns, and driving results. You focus on your business.</p>
+                    </div>
+                    <div class="step fade-up">
+                        <div class="step__number">4</div>
+                        <h3 class="step__title">Real Results, Reported Clearly</h3>
+                        <p class="step__text">Monthly reports you actually understand. No jargon. No vanity metrics. Just clear data showing more customers finding and choosing your business.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Join the <span class="text-gradient-secondary">Player's Club</span></h2>
-                <p>Get exclusive deals, tournament alerts & gaming news</p>
-                <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+        <!-- ========== 6. PRICING ========== -->
+        <section class="section section--gray" id="pricing">
+            <div class="container">
+                <h2 class="section__title fade-up">Simple, Transparent Pricing</h2>
+                <p class="section__subtitle fade-up">No long-term contracts. No hidden fees. Cancel anytime.</p>
+                <div class="pricing-grid">
+                    <!-- Starter -->
+                    <div class="pricing-card fade-up">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Starter</h3>
+                            <div class="pricing-card__price"><span class="pricing-card__currency">$</span>500<span class="pricing-card__period">/mo</span></div>
+                            <p class="pricing-card__for">Best for: Small businesses getting started</p>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>12 social media posts/month (Facebook + Instagram)</li>
+                            <li>Google Business Profile setup &amp; optimization</li>
+                            <li>WhatsApp Business setup</li>
+                            <li>Monthly performance summary</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--outline btn--full">Get Started</a>
+                    </div>
+                    <!-- Growth (Popular) -->
+                    <div class="pricing-card pricing-card--popular fade-up">
+                        <div class="pricing-card__badge">Most Popular</div>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Growth</h3>
+                            <div class="pricing-card__price"><span class="pricing-card__currency">$</span>1,500<span class="pricing-card__period">/mo</span></div>
+                            <p class="pricing-card__for">Best for: Hotels, established restaurants, tour operators</p>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>20 social media posts/month + Stories + Reels</li>
+                            <li>Full local SEO + review generation system</li>
+                            <li>WhatsApp broadcast strategy</li>
+                            <li>Basic Meta ad management</li>
+                            <li>Email marketing automation</li>
+                            <li>Monthly report + strategy call</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+                    </div>
+                    <!-- Premium -->
+                    <div class="pricing-card fade-up">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__name">Premium</h3>
+                            <div class="pricing-card__price"><span class="pricing-card__currency">$</span>3,000<span class="pricing-card__period">/mo</span></div>
+                            <p class="pricing-card__for">Best for: Resorts, hotel chains, destination companies</p>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>30+ posts/month + full video content + TikTok</li>
+                            <li>Complete SEO + content marketing</li>
+                            <li>Full WhatsApp automation + chatbot</li>
+                            <li>Meta + Google Ads management</li>
+                            <li>Full email sequences + newsletter</li>
+                            <li>Bi-weekly reports + strategy sessions</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--outline btn--full">Get Started</a>
+                    </div>
+                </div>
+                <p class="pricing__note fade-up">Not sure which plan is right? Start with a free audit and we'll recommend the best fit.</p>
+                <p class="pricing__fine fade-up">Prices in USD. XCD pricing available. Ad spend is separate and paid directly to platforms.</p>
+            </div>
+        </section>
+
+        <!-- ========== 7. RESULTS / SOCIAL PROOF ========== -->
+        <section class="section" id="results">
+            <div class="container">
+                <h2 class="section__title fade-up">What We Deliver</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card fade-up">
+                        <div class="metric-card__value">Top 10</div>
+                        <div class="metric-card__label">Google Visibility</div>
+                        <p class="metric-card__desc">Most clients see first-page results within 60 days</p>
+                    </div>
+                    <div class="metric-card fade-up">
+                        <div class="metric-card__value">3-5x</div>
+                        <div class="metric-card__label">Social Engagement</div>
+                        <p class="metric-card__desc">Average increase in engagement within 30 days</p>
+                    </div>
+                    <div class="metric-card fade-up">
+                        <div class="metric-card__value">10-20</div>
+                        <div class="metric-card__label">New Reviews/Month</div>
+                        <p class="metric-card__desc">Our review system typically generates 10-20 new reviews per month</p>
+                    </div>
+                    <div class="metric-card fade-up">
+                        <div class="metric-card__value">10-15 hrs</div>
+                        <div class="metric-card__label">Time Saved Weekly</div>
+                        <p class="metric-card__desc">Clients save 10-15 hours per week on marketing tasks</p>
+                    </div>
+                </div>
+                <div class="testimonial-placeholder fade-up">
+                    <p>Client stories coming soon. In the meantime, start with your free audit and see the difference for yourself.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 8. FAQ ========== -->
+        <section class="section section--gray" id="faq">
+            <div class="container container--narrow">
+                <h2 class="section__title fade-up">Frequently Asked Questions</h2>
+                <div class="faq-list fade-up">
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            Do I need to understand AI or technology?
+                            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-item__answer" aria-hidden="true">
+                            <p>Not at all. We handle everything. You just tell us about your business and goals&nbsp;&mdash; we do the rest. You'll never need to touch an AI tool.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            How is this different from other marketing agencies?
+                            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-item__answer" aria-hidden="true">
+                            <p>Three ways: we're local (based in Antigua, not overseas), we're AI-powered (so we deliver faster and at lower cost), and we focus exclusively on Caribbean businesses (so we understand your market).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            What if I already have a marketing person or do my own social media?
+                            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-item__answer" aria-hidden="true">
+                            <p>Great&nbsp;&mdash; we can complement what you're already doing. Many clients use us to handle the heavy lifting while their team focuses on in-person customer experience.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            How quickly will I see results?
+                            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-item__answer" aria-hidden="true">
+                            <p>Google Business Profile improvements show within the first week. Social media engagement typically increases within 2-3 weeks. SEO results build over 2-3 months. We set realistic expectations upfront.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            Can I cancel anytime?
+                            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-item__answer" aria-hidden="true">
+                            <p>Yes. No long-term contracts. We believe if we're doing great work, you'll stay because you want to, not because you're locked in.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            Do you work with businesses outside Antigua?
+                            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-item__answer" aria-hidden="true">
+                            <p>Absolutely. We serve businesses across the Caribbean&nbsp;&mdash; St.&nbsp;Lucia, St.&nbsp;Kitts, Barbados, Grenada, and the wider OECS region. Remote collaboration works seamlessly with our AI-powered systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 9. CONTACT / CTA ========== -->
+        <section class="section section--dark" id="contact">
+            <div class="container container--narrow">
+                <h2 class="section__title section__title--light fade-up">Get Your Free Marketing Audit</h2>
+                <p class="section__subtitle section__subtitle--light fade-up">We'll analyze your Google presence, social media, website, and reviews&nbsp;&mdash; then show you exactly where you're leaving money on the table. No cost. No commitment. Just clarity.</p>
+                <form class="contact-form fade-up" action="https://formspree.io/f/placeholder" method="POST" id="contactForm">
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="business-name">Business Name <span class="required">*</span></label>
+                            <input type="text" id="business-name" name="business_name" required placeholder="e.g. Paradise Beach Resort">
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="your-name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="your-name" name="your_name" required placeholder="e.g. John Williams">
+                        </div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="you@business.com">
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="whatsapp">WhatsApp Number <span class="required">*</span></label>
+                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+1 (268) 555-0123">
+                        </div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="business-type">Business Type</label>
+                            <select id="business-type" name="business_type">
+                                <option value="" disabled selected>Select your business type</option>
+                                <option value="hotel_resort">Hotel / Resort</option>
+                                <option value="restaurant_bar">Restaurant / Bar</option>
+                                <option value="tour_operator">Tour Operator</option>
+                                <option value="retail_shop">Retail / Shop</option>
+                                <option value="professional_services">Professional Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="website-url">Website URL <span class="optional">(optional)</span></label>
+                            <input type="url" id="website-url" name="website_url" placeholder="https://yourbusiness.com">
+                        </div>
+                    </div>
+                    <div class="contact-form__field contact-form__field--full">
+                        <label for="challenge">What's your biggest marketing challenge? <span class="optional">(optional)</span></label>
+                        <textarea id="challenge" name="challenge" rows="4" placeholder="Tell us what's not working or what you'd like to improve..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full btn--lg">Request My Free Audit</button>
                 </form>
-                <p class="newsletter-incentive">Sign up & get 10% off your first purchase!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <div class="logo-icon">
-                            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="25" cy="25" r="20" fill="#FF3333"/>
-                                <path d="M25 12 L25 25" stroke="white" stroke-width="4" stroke-linecap="round"/>
-                                <circle cx="25" cy="25" r="14" fill="none" stroke="white" stroke-width="3"/>
-                            </svg>
-                        </div>
-                        <div class="logo-text">
-                            <span class="select">SELECT</span>
-                            <span class="start">START</span>
-                        </div>
+                <div class="contact-alt fade-up">
+                    <p>Prefer WhatsApp? Message us directly:</p>
+                    <a href="https://wa.me/12685551234" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Chat on WhatsApp
                     </a>
-                    <p>Antigua's premier destination for gaming PCs, consoles, repairs, and epic tournaments. Level up with us!</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <circle cx="18" cy="6" r="1"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Discord">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
-
-                <div class="footer-column">
-                    <h4>Shop</h4>
-                    <ul class="footer-links">
-                        <li><a href="shop.html?category=pcs">Gaming PCs</a></li>
-                        <li><a href="shop.html?category=consoles">Consoles</a></li>
-                        <li><a href="shop.html?category=components">Components</a></li>
-                        <li><a href="shop.html?category=peripherals">Peripherals</a></li>
-                        <li><a href="shop.html?category=games">Games</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Computer Repairs</a></li>
-                        <li><a href="#">Custom PC Builds</a></li>
-                        <li><a href="#">Starlink Rentals</a></li>
-                        <li><a href="#">Trade-In Program</a></li>
-                        <li><a href="#">Gift Cards</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul class="footer-links">
-                        <li>St. John's, Antigua</li>
-                        <li><a href="tel:+12684621234">+1 (268) 462-1234</a></li>
-                        <li><a href="mailto:info@selectstartgaming.com">info@selectstartgaming.com</a></li>
-                        <li>Mon-Sat: 10AM - 8PM</li>
-                        <li>Sun: 12PM - 6PM</li>
-                    </ul>
+                <div class="contact-info fade-up">
+                    <p>Email: <a href="mailto:hello@newhorizondigital.ag">hello@newhorizondigital.ag</a></p>
+                    <p>Based in Antigua and Barbuda. Serving the Caribbean.</p>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="footer-bottom">
-                <p class="footer-copyright">&copy; 2026 Select Start Gaming. All rights reserved.</p>
-                <div class="footer-payments">
-                    <div class="payment-icon">VISA</div>
-                    <div class="payment-icon">MC</div>
-                    <div class="payment-icon">AMEX</div>
-                    <div class="payment-icon">PP</div>
-                </div>
+    <!-- ========== 10. FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="footer__logo-text">New Horizon <span class="footer__logo-accent">Digital</span></span>
+                <p class="footer__tagline">AI-Powered Marketing for Caribbean Business</p>
+            </div>
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <a href="#hero">Home</a>
+                <a href="#problem">Why Us</a>
+                <a href="#solution">About</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer__social">
+                <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://wa.me/12685551234" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 New Horizon Digital. AI-Powered Marketing for Caribbean Business.</p>
+                <p class="footer__made">Made with AI in Antigua &#x1F1E6;&#x1F1EC;</p>
             </div>
         </div>
     </footer>
+
+    <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+    <a href="https://wa.me/12685551234" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
