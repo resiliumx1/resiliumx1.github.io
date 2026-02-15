@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compete in Caribbean's most exciting gaming tournaments at Select Start Gaming. Win cash prizes, earn bragging rights, and join our gaming community.">
+    <title>Tournaments | Select Start Gaming - Prove Your Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FF3333' stroke='%23FF3333' stroke-width='5'/%3E%3Cpath d='M50 25 L50 50' stroke='white' stroke-width='8' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='white' stroke-width='6'/%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="20" fill="#FF3333"/>
+                        <path d="M25 12 L25 25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="25" cy="25" r="14" fill="none" stroke="white" stroke-width="3"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="select">SELECT</span>
+                    <span class="start">START</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="tournaments.html" class="nav-link active">Tournaments</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="currency-toggle">
+                    <button class="currency-btn active" data-currency="usd">USD</button>
+                    <button class="currency-btn" data-currency="xcd">XCD</button>
+                </div>
+                <button class="cart-btn" id="cartBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"/>
+                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"/>
+                        <path d="M1 1H5L7.68 14.39C7.77 14.83 8.02 15.22 8.38 15.5C8.74 15.78 9.19 15.93 9.64 15.92H19.36C19.81 15.93 20.26 15.78 20.62 15.5C20.98 15.22 21.23 14.83 21.32 14.39L23 6H6"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Tournament Hero -->
+    <section class="tournament-hero">
+        <div class="container">
+            <h1>&#127942; SELECT START GAMING <span class="text-gradient">TOURNAMENTS</span></h1>
+            <p>Where Legends Are Made. Compete in the Caribbean's most exciting gaming tournaments. Win cash prizes, earn bragging rights, and join our gaming community.</p>
+            <div class="hero-ctas">
+                <a href="#register" class="btn btn-primary btn-lg btn-pulse">Register For Next Tournament</a>
+                <a href="#leaderboard" class="btn btn-outline btn-lg">View Past Champions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Tournament Spotlight -->
+    <section class="spotlight-section">
+        <div class="container">
+            <div class="spotlight-card">
+                <div class="spotlight-banner">
+                    <div class="spotlight-game-logo">
+                        <div class="game-icon">&#127918;</div>
+                        <h2>CALL OF DUTY</h2>
+                    </div>
+                </div>
+                <div class="spotlight-content">
+                    <div class="spotlight-header">
+                        <div class="spotlight-title">
+                            <h3>Caribbean Call of Duty Championship</h3>
+                            <p>Call of Duty: Modern Warfare III - 4v4 Team Battle</p>
+                        </div>
+                        <span class="registration-status">Registration Open</span>
+                    </div>
+
+                    <div class="spotlight-grid">
+                        <div class="spotlight-stat">
+                            <div class="stat-icon">&#128197;</div>
+                            <span class="value">Mar 15-16</span>
+                            <span class="label">Date</span>
+                        </div>
+                        <div class="spotlight-stat">
+                            <div class="stat-icon">&#128336;</div>
+                            <span class="value">6:00 PM</span>
+                            <span class="label">Start Time (AST)</span>
+                        </div>
+                        <div class="spotlight-stat">
+                            <div class="stat-icon">&#127918;</div>
+                            <span class="value">PlayStation 5</span>
+                            <span class="label">Platform</span>
+                        </div>
+                        <div class="spotlight-stat">
+                            <div class="stat-icon">&#128101;</div>
+                            <span class="value">18/32</span>
+                            <span class="label">Teams Registered</span>
+                        </div>
+                    </div>
+
+                    <div class="prize-breakdown">
+                        <div class="prize-header">
+                            <h4>Prize Pool</h4>
+                            <span class="total">$1,000 USD</span>
+                        </div>
+                        <div class="prize-places">
+                            <div class="prize-place">
+                                <div class="medal">&#129351;</div>
+                                <span class="amount">$600</span>
+                                <span class="position">1st Place</span>
+                            </div>
+                            <div class="prize-place">
+                                <div class="medal">&#129352;</div>
+                                <span class="amount">$250</span>
+                                <span class="position">2nd Place</span>
+                            </div>
+                            <div class="prize-place">
+                                <div class="medal">&#129353;</div>
+                                <span class="amount">$150</span>
+                                <span class="position">3rd Place</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-actions" id="register">
+                        <a href="#" class="btn btn-tertiary btn-lg btn-pulse">Register Your Team</a>
+                        <a href="#" class="btn btn-outline btn-lg">View Rules & Format</a>
+                        <a href="#" class="btn btn-outline btn-lg">Join Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Bracket Section -->
+    <section class="bracket-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tournament <span class="text-gradient">Bracket</span></h2>
+                <p>Live bracket from our most recent tournament</p>
+            </div>
+
+            <div class="bracket-container">
+                <div class="bracket">
+                    <!-- Round 1 -->
+                    <div class="bracket-round">
+                        <h4>Quarter-Finals</h4>
+                        <div class="bracket-match">
+                            <div class="bracket-team winner">
+                                <span class="team-name">Team Vibes</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="bracket-team">
+                                <span class="team-name">Island Warriors</span>
+                                <span class="score">1</span>
+                            </div>
+                        </div>
+                        <div class="bracket-match">
+                            <div class="bracket-team winner">
+                                <span class="team-name">ProGamer_AG</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="bracket-team">
+                                <span class="team-name">Tropic Thunder</span>
+                                <span class="score">2</span>
+                            </div>
+                        </div>
+                        <div class="bracket-match">
+                            <div class="bracket-team">
+                                <span class="team-name">Sunset Squad</span>
+                                <span class="score">1</span>
+                            </div>
+                            <div class="bracket-team winner">
+                                <span class="team-name">AntigaAce</span>
+                                <span class="score">3</span>
+                            </div>
+                        </div>
+                        <div class="bracket-match">
+                            <div class="bracket-team winner">
+                                <span class="team-name">Caribbean Legends</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="bracket-team">
+                                <span class="team-name">Beach Brawlers</span>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semi-Finals -->
+                    <div class="bracket-round">
+                        <h4>Semi-Finals</h4>
+                        <div class="bracket-match">
+                            <div class="bracket-team winner">
+                                <span class="team-name">Team Vibes</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="bracket-team">
+                                <span class="team-name">ProGamer_AG</span>
+                                <span class="score">2</span>
+                            </div>
+                        </div>
+                        <div class="bracket-match">
+                            <div class="bracket-team">
+                                <span class="team-name">AntigaAce</span>
+                                <span class="score">1</span>
+                            </div>
+                            <div class="bracket-team winner">
+                                <span class="team-name">Caribbean Legends</span>
+                                <span class="score">3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finals -->
+                    <div class="bracket-round">
+                        <h4>Finals</h4>
+                        <div class="bracket-match finals">
+                            <div class="bracket-team winner">
+                                <span class="team-name">&#127942; Team Vibes</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="bracket-team">
+                                <span class="team-name">Caribbean Legends</span>
+                                <span class="score">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Tournaments -->
+    <section class="upcoming-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming <span class="text-gradient">Tournaments</span></h2>
+                <p>Mark your calendar for these epic battles</p>
+            </div>
+
+            <div class="tournaments-list">
+                <div class="tournament-item">
+                    <div class="tournament-date">
+                        <span class="month">Mar</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="tournament-meta">
+                        <h4>Call of Duty Championship</h4>
+                        <div class="tournament-tags">
+                            <span class="tag game">Call of Duty: MW3</span>
+                            <span class="tag">4v4</span>
+                            <span class="tag">Double Elimination</span>
+                            <span class="tag">PS5</span>
+                        </div>
+                    </div>
+                    <div class="tournament-prize-small">
+                        <span class="label">Prize Pool</span>
+                        <span class="amount">$1,000</span>
+                    </div>
+                </div>
+
+                <div class="tournament-item">
+                    <div class="tournament-date">
+                        <span class="month">Apr</span>
+                        <span class="day">05</span>
+                    </div>
+                    <div class="tournament-meta">
+                        <h4>FIFA 24 1v1 Tournament</h4>
+                        <div class="tournament-tags">
+                            <span class="tag game">FIFA 24</span>
+                            <span class="tag">1v1</span>
+                            <span class="tag">Single Elimination</span>
+                            <span class="tag">PS5/Xbox</span>
+                        </div>
+                    </div>
+                    <div class="tournament-prize-small">
+                        <span class="label">Prize Pool</span>
+                        <span class="amount">$500</span>
+                    </div>
+                </div>
+
+                <div class="tournament-item">
+                    <div class="tournament-date">
+                        <span class="month">Apr</span>
+                        <span class="day">20</span>
+                    </div>
+                    <div class="tournament-meta">
+                        <h4>Fortnite Duo Challenge</h4>
+                        <div class="tournament-tags">
+                            <span class="tag game">Fortnite</span>
+                            <span class="tag">2v2</span>
+                            <span class="tag">Points-Based</span>
+                            <span class="tag">All Platforms</span>
+                        </div>
+                    </div>
+                    <div class="tournament-prize-small">
+                        <span class="label">Prize Pool</span>
+                        <span class="amount">$750</span>
+                    </div>
+                </div>
+
+                <div class="tournament-item">
+                    <div class="tournament-date">
+                        <span class="month">May</span>
+                        <span class="day">10</span>
+                    </div>
+                    <div class="tournament-meta">
+                        <h4>Super Smash Bros Ultimate</h4>
+                        <div class="tournament-tags">
+                            <span class="tag game">Smash Bros</span>
+                            <span class="tag">1v1</span>
+                            <span class="tag">Double Elimination</span>
+                            <span class="tag">Nintendo Switch</span>
+                        </div>
+                    </div>
+                    <div class="tournament-prize-small">
+                        <span class="label">Prize Pool</span>
+                        <span class="amount">$600</span>
+                    </div>
+                </div>
+
+                <div class="tournament-item">
+                    <div class="tournament-date">
+                        <span class="month">Jun</span>
+                        <span class="day">01</span>
+                    </div>
+                    <div class="tournament-meta">
+                        <h4>Street Fighter 6 Showdown</h4>
+                        <div class="tournament-tags">
+                            <span class="tag game">Street Fighter 6</span>
+                            <span class="tag">1v1</span>
+                            <span class="tag">Double Elimination</span>
+                            <span class="tag">PS5</span>
+                        </div>
+                    </div>
+                    <div class="tournament-prize-small">
+                        <span class="label">Prize Pool</span>
+                        <span class="amount">$400</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-section" id="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2>Champions <span class="text-gradient">League</span></h2>
+                <p>Season 2026-Q1 Rankings - Top competitors based on tournament performance</p>
+            </div>
+
+            <div class="leaderboard-table">
+                <div class="leaderboard-header">
+                    <span>Rank</span>
+                    <span>Player / Team</span>
+                    <span>Points</span>
+                    <span>Wins</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank gold">&#129351; 1</span>
+                    <div class="player-info">
+                        <div class="player-avatar">TV</div>
+                        <div>
+                            <span class="player-name">Team Vibes</span>
+                            <span class="player-games">COD, Fortnite, FIFA</span>
+                        </div>
+                    </div>
+                    <span class="points">275</span>
+                    <span class="wins">3</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank silver">&#129352; 2</span>
+                    <div class="player-info">
+                        <div class="player-avatar">PG</div>
+                        <div>
+                            <span class="player-name">ProGamer_AG</span>
+                            <span class="player-games">COD, Smash Bros</span>
+                        </div>
+                    </div>
+                    <span class="points">225</span>
+                    <span class="wins">2</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank bronze">&#129353; 3</span>
+                    <div class="player-info">
+                        <div class="player-avatar">AA</div>
+                        <div>
+                            <span class="player-name">AntigaAce</span>
+                            <span class="player-games">COD, FIFA</span>
+                        </div>
+                    </div>
+                    <span class="points">175</span>
+                    <span class="wins">2</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank">4</span>
+                    <div class="player-info">
+                        <div class="player-avatar">CL</div>
+                        <div>
+                            <span class="player-name">Caribbean Legends</span>
+                            <span class="player-games">COD, Fortnite</span>
+                        </div>
+                    </div>
+                    <span class="points">150</span>
+                    <span class="wins">1</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank">5</span>
+                    <div class="player-info">
+                        <div class="player-avatar">IW</div>
+                        <div>
+                            <span class="player-name">Island Warriors</span>
+                            <span class="player-games">COD</span>
+                        </div>
+                    </div>
+                    <span class="points">125</span>
+                    <span class="wins">1</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank">6</span>
+                    <div class="player-info">
+                        <div class="player-avatar">TT</div>
+                        <div>
+                            <span class="player-name">Tropic Thunder</span>
+                            <span class="player-games">COD, Fortnite</span>
+                        </div>
+                    </div>
+                    <span class="points">100</span>
+                    <span class="wins">1</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank">7</span>
+                    <div class="player-info">
+                        <div class="player-avatar">SS</div>
+                        <div>
+                            <span class="player-name">Sunset Squad</span>
+                            <span class="player-games">FIFA, Fortnite</span>
+                        </div>
+                    </div>
+                    <span class="points">75</span>
+                    <span class="wins">0</span>
+                </div>
+
+                <div class="leaderboard-row">
+                    <span class="rank">8</span>
+                    <div class="player-info">
+                        <div class="player-avatar">BB</div>
+                        <div>
+                            <span class="player-name">Beach Brawlers</span>
+                            <span class="player-games">COD</span>
+                        </div>
+                    </div>
+                    <span class="points">50</span>
+                    <span class="wins">0</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                    <strong>Season Prizes:</strong> 1st Place: $500 USD + Trophy | 2nd: $250 USD | 3rd: $100 USD
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Community CTA -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join Our <span class="text-gradient-secondary">Discord Community</span></h2>
+                <p>Connect with fellow gamers, find teammates, and stay updated on tournaments</p>
+                <a href="#" class="btn btn-primary btn-lg">Join Discord Server</a>
+                <p class="newsletter-incentive" style="margin-top: 1rem;">500+ members and growing!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="20" fill="#FF3333"/>
+                                <path d="M25 12 L25 25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                                <circle cx="25" cy="25" r="14" fill="none" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="select">SELECT</span>
+                            <span class="start">START</span>
+                        </div>
+                    </a>
+                    <p>Antigua's premier destination for gaming PCs, consoles, repairs, and epic tournaments. Level up with us!</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=pcs">Gaming PCs</a></li>
+                        <li><a href="shop.html?category=consoles">Consoles</a></li>
+                        <li><a href="shop.html?category=components">Components</a></li>
+                        <li><a href="shop.html?category=peripherals">Peripherals</a></li>
+                        <li><a href="shop.html?category=games">Games</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Tournaments</h4>
+                    <ul class="footer-links">
+                        <li><a href="tournaments.html">Current Tournament</a></li>
+                        <li><a href="tournaments.html#leaderboard">Leaderboard</a></li>
+                        <li><a href="#">Tournament Rules</a></li>
+                        <li><a href="#">Past Results</a></li>
+                        <li><a href="#">Join Discord</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>St. John's, Antigua</li>
+                        <li><a href="tel:+12684621234">+1 (268) 462-1234</a></li>
+                        <li><a href="mailto:info@selectstartgaming.com">info@selectstartgaming.com</a></li>
+                        <li>Mon-Sat: 10AM - 8PM</li>
+                        <li>Sun: 12PM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Select Start Gaming. All rights reserved.</p>
+                <div class="footer-payments">
+                    <div class="payment-icon">VISA</div>
+                    <div class="payment-icon">MC</div>
+                    <div class="payment-icon">AMEX</div>
+                    <div class="payment-icon">PP</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

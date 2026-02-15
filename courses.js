@@ -1,11 +1,11 @@
 /* ==========================================================================
-   NEW HORIZON DIGITAL — JavaScript
-   - Smooth scroll navigation
+   MOUNT KAILASH SCHOOL — Course Page JavaScript
    - Sticky header with scroll effect
    - Mobile menu toggle
+   - Smooth scroll navigation
    - FAQ accordion
    - Scroll-triggered fade-up animations
-   - Contact form basic handling
+   - Active nav link highlight
    ========================================================================== */
 
 (function () {
@@ -14,21 +14,20 @@
     /* -----------------------------------------------------------------------
        DOM References
     ----------------------------------------------------------------------- */
-    var header = document.getElementById('header');
-    var menuBtn = document.getElementById('menuBtn');
-    var mobileNav = document.getElementById('mobileNav');
-    var faqItems = document.querySelectorAll('.faq-item__question');
-    var fadeEls = document.querySelectorAll('.fade-up');
-    var contactForm = document.getElementById('contactForm');
+    var header = document.getElementById('mkHeader');
+    var menuBtn = document.getElementById('mkMenuBtn');
+    var mobileNav = document.getElementById('mkMobileNav');
+    var faqItems = document.querySelectorAll('.mk-faq-item__question');
+    var fadeEls = document.querySelectorAll('.mk-fade-up');
 
     /* -----------------------------------------------------------------------
        1. Sticky Header — add class on scroll
     ----------------------------------------------------------------------- */
     function handleHeaderScroll() {
         if (window.scrollY > 40) {
-            header.classList.add('header--scrolled');
+            header.classList.add('mk-header--scrolled');
         } else {
-            header.classList.remove('header--scrolled');
+            header.classList.remove('mk-header--scrolled');
         }
     }
     window.addEventListener('scroll', handleHeaderScroll, { passive: true });
@@ -68,7 +67,7 @@
             if (!target) return;
 
             e.preventDefault();
-            var headerOffset = 72;
+            var headerOffset = 80;
             var elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
             var offsetPosition = elementPosition - headerOffset;
 
@@ -121,8 +120,8 @@
                 });
             },
             {
-                threshold: 0.12,
-                rootMargin: '0px 0px -40px 0px'
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
             }
         );
 
@@ -137,57 +136,13 @@
     }
 
     /* -----------------------------------------------------------------------
-       6. Contact Form Handling
-    ----------------------------------------------------------------------- */
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            var formData = new FormData(contactForm);
-            var submitBtn = contactForm.querySelector('button[type="submit"]');
-            var originalText = submitBtn.textContent;
-
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-
-            // Using Formspree or similar service
-            fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    Accept: 'application/json'
-                }
-            })
-                .then(function (response) {
-                    if (response.ok) {
-                        contactForm.innerHTML =
-                            '<div style="text-align:center;padding:40px 0;">' +
-                            '<h3 style="color:#fff;margin-bottom:12px;">Thank You!</h3>' +
-                            '<p style="color:rgba(255,255,255,0.7);">We\'ve received your request. ' +
-                            'We\'ll review your business and get back to you within 24 hours with your free marketing audit.</p>' +
-                            '</div>';
-                    } else {
-                        throw new Error('Form submission failed');
-                    }
-                })
-                .catch(function () {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                    alert(
-                        'Something went wrong. Please try again, or contact us directly via WhatsApp.'
-                    );
-                });
-        });
-    }
-
-    /* -----------------------------------------------------------------------
-       7. Active Nav Link Highlight on Scroll
+       6. Active Nav Link Highlight on Scroll
     ----------------------------------------------------------------------- */
     var sections = document.querySelectorAll('section[id]');
-    var navLinks = document.querySelectorAll('.header__nav-link');
+    var navLinks = document.querySelectorAll('.mk-header__nav-link');
 
     function highlightNav() {
-        var scrollPos = window.scrollY + 100;
+        var scrollPos = window.scrollY + 120;
 
         sections.forEach(function (section) {
             var top = section.offsetTop;
@@ -196,9 +151,9 @@
 
             if (scrollPos >= top && scrollPos < top + height) {
                 navLinks.forEach(function (link) {
-                    link.classList.remove('header__nav-link--active');
+                    link.classList.remove('mk-header__nav-link--active');
                     if (link.getAttribute('href') === '#' + id) {
-                        link.classList.add('header__nav-link--active');
+                        link.classList.add('mk-header__nav-link--active');
                     }
                 });
             }
